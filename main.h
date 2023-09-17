@@ -4,6 +4,6 @@
 #include<unistd.h>
 #include<stdarg.h>
 #include<string.h>
-int _printf(const char *format, ...);
 int _putchar(char c);
+int _printf(const char *format, ...);
 #endif
