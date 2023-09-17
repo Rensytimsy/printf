@@ -6,5 +6,5 @@
 #include<string.h>
 int _putchar(char c);
 int _printf(const char *format, ...);
-void caseCheck(const char *format, int numchar, va_list args);
+int caseCheck(const char *format, int numchar, va_list args);
 #endif
