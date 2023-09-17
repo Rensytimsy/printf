@@ -6,7 +6,7 @@
   * @args: Parameters
   * Return: Int
   */
-int caseCheck(const char *format, int numchar, va_list args)
+void caseCheck(const char *format, int numchar, va_list args)
 {
 	switch (*format)
 	{
