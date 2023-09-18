@@ -25,7 +25,7 @@ int caseCheck(const char *format, int numchar, va_list args)
 			_putchar('%');
 			numchar++;
 			break;
-			/*case 'b':
+		 case 'b':
 			numchar = printf_binary(va_arg(args, unsigned int), numchar);
 			break;
 		case 'x':
@@ -43,7 +43,7 @@ int caseCheck(const char *format, int numchar, va_list args)
 			break;
 		case 'p':
 			numchar = printf_ptr(args, numchar);
-			break;*/
+			break;
 		default:
 			break;
 	}
