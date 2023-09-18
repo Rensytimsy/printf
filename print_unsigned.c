@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * printf_unsigned - is our main function.
+ * @num: is of integer value.
+ * @numchar: is the total calculation of arguments
+ * Return: (numchar) 
+ */
 int printf_unsigned(unsigned int num, int numchar)
 {
 	int digits = 0;
