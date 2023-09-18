@@ -8,7 +8,7 @@
   */
 int caseCheck(const char *format, int numchar, va_list args)
 {
- switch (*format)
+	switch (*format)
 	{
 		case 'd':
 		case 'i':
@@ -25,7 +25,7 @@ int caseCheck(const char *format, int numchar, va_list args)
 			_putchar('%');
 			numchar++;
 			break;
-		 case 'b':
+		case 'b':
 			numchar = printf_binary(va_arg(args, unsigned int), numchar);
 			break;
 		case 'x':
@@ -36,7 +36,7 @@ int caseCheck(const char *format, int numchar, va_list args)
 			numchar = printf_oct(va_arg(args, unsigned int), numchar);
 			break;
 		case 'u':
-			numchar = printf_unsigned(va_arg(args, unsigned int), numchar);
+			numchar = printf_unsgned(va_arg(args, unsigned int), numchar);
 			break;
 		case 'r':
 			numchar = printf_reverse(args, numchar);
@@ -48,5 +48,4 @@ int caseCheck(const char *format, int numchar, va_list args)
 			break;
 	}
 	return (numchar);
-
 }

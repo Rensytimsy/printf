@@ -5,7 +5,7 @@
  * @numchar: is the total calculation of arguments
  * Return: (numchar) 
  */
-int printf_unsigned(unsigned int num, int numchar)
+int printf_unsgned(unsigned int num, int numchar)
 {
 	int digits = 0;
 	unsigned int temp = num;
