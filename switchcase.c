@@ -39,6 +39,12 @@ int caseCheck(const char *format, int numchar, va_list args)
 				numchar += i;
 			}
 			break;
+		default:
+			{
+				write(1, format, 1);
+				numchar++;
+				return (-1);
+			}
 	}
-	return(numchar);
+	return (numchar);
 }
