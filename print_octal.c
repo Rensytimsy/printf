@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * print_oct - is our main file that takes in two parameters
+ * @num: is an integer value
+ * @numchar: number of characters
+ * Return: (numchar) total count.
+ */
 
 int printf_oct(unsigned int num, int numchar)
 {
