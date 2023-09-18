@@ -20,8 +20,7 @@ int caseCheck(const char *format, int numchar, va_list args)
 			{
 				int character = va_arg(args, int);
 
-				write(1, &character, 1);
-
+				_putchar(character);
 				numchar++;
 			}
 			break;
@@ -34,16 +33,13 @@ int caseCheck(const char *format, int numchar, va_list args)
 				{
 					i++;
 				}
-
 				write(1, string, i);
 				numchar += i;
 			}
 			break;
 		default:
 			{
-				write(1, format, 1);
-				numchar++;
-				return (-1);
+				break;
 			}
 	}
 	return (numchar);
