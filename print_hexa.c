@@ -1,3 +1,5 @@
+#include "main.h"
+
 int _x(unsigned int num, int numchar, int uppercase)
 {
 	int hex[100], i = 0, j;
