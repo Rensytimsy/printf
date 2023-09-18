@@ -4,6 +4,7 @@
 #include<unistd.h>
 #include<stdarg.h>
 #include<string.h>
+#include <limits.h>
 #define MAX_HEX_DIGITS 16
 
 int _putchar(char c);
