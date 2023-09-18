@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *printf_char - is our main function that takes two parameters
- *@args - arguments passed to this function
- *@numchar - is the total count of arguments
+ *@args:  arguments passed to this function
+ *@numchar:  is the total count of arguments
  *Return: (numchar + 1) the total count plus '\0'
 */
 

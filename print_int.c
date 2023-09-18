@@ -8,7 +8,7 @@
 
 int printf_int(va_list args, int numchar)
 {
-    int num = va_arg(args, int);
+	int num = va_arg(args, int);
 	int digits = 0;
 	int temp = num;
 	int digit;

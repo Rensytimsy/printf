@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+  * printf_ptr - function that prints pointer address
+  * @args: arguments to be passed
+  * @numchar: number of characters
+  * Return: return numchar
+  */
 int printf_ptr(va_list args, int numchar)
 {
 	void *ptr = va_arg(args, void*);
@@ -9,6 +15,7 @@ int printf_ptr(va_list args, int numchar)
 	unsigned long temp = num;
 	char hex_digits[MAX_HEX_DIGITS] = "0123456789abcdef";
 	char hex[MAX_HEX_DIGITS];
+
 	while (temp != 0)
 	{
 		digits++;
@@ -25,7 +32,9 @@ int printf_ptr(va_list args, int numchar)
 		for (i = digits - 1; i >= 0; i--)
 		{
 			int digit = num % 16;
+
 			hex[i] = hex_digits[digit];
+
 			num /= 16;
 		}
 		for (i = 0; i < digits; i++)

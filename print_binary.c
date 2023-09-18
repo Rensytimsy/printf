@@ -1,9 +1,16 @@
 #include "main.h"
 
+/**
+  * printf_binary - function for printing binary numbers
+  * @num: numbers to print
+  * @numchar: count number of characters
+  * Return: return numchar
+  */
 int printf_binary(unsigned int num, int numchar)
 {
 	int binary[32] = {0};
 	int i = 0;
+
 	if (num == 0)
 	{
 		_putchar('0');
