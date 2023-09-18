@@ -22,14 +22,13 @@ int _printf(const char *format, ...)
 		{
 			format++; /* Move past '%'*/
 			numchar += caseCheck(format, numchar, args);
-			format++;
 		}
 		else
 		{
 			_putchar(*format);
 			numchar++;
-			format++;
 		}
+		format++;
 	}
 	va_end(args);
 	return (numchar);
