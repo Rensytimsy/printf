@@ -9,14 +9,14 @@
 
 int printf_str(va_list args, int numchar)
 {
-    char *string = va_arg(args, char *);
-	while (*string != '\0')
-	{
-		write(1, string, 1);
-		numchar++;
-		string++;
-	}
-	return (numchar);
+char *string = va_arg(args, char *);
+while (*string != '\0')
+{
+write(1, string, 1);
+numchar++;
+string++;
+}
+return (numchar);
 }
 /**
  *printf_char - is our main function that takes two parameters
@@ -27,8 +27,7 @@ int printf_str(va_list args, int numchar)
 
 int printf_char(va_list args, int numchar)
 {
-    int character = va_arg(args, int);
-
-    write(1, &character, 1);
-    return (numchar + 1);
+int character = va_arg(args, int);
+write(1, &character, 1);
+return (numchar + 1);
 }
