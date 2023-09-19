@@ -12,7 +12,8 @@ int printf_str(va_list args, int numchar)
 char *string = va_arg(args, char *);
 while (*string != '\0')
 {
-write(1, string, 1);
+/* write(1, string, 1); */
+_putchar(*string);
 numchar++;
 string++;
 }
@@ -28,6 +29,6 @@ return (numchar);
 int printf_char(va_list args, int numchar)
 {
 int character = va_arg(args, int);
-write(1, &character, 1);
+_putchar(character);
 return (numchar + 1);
 }
