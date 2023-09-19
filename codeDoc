@@ -1,0 +1,9 @@
+fmt => changed to checktest
+_printf => changed to printf
+
+//Prototypes changed names
+
+int print_string => changed to print_str
+int print_hexadecimal => changed to print_hex
+int print_hexa_upper => changed to print_hex_upper
+int print_hexa => changed to print_hexa
