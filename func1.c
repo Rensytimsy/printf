@@ -13,9 +13,10 @@ int temp = num;
 int digit;
 if (num < 0)
 {
-numchar += _putchar('-');
 num = -num;
 temp = num;
+numchar ++;
+numchar += _putchar('-');
 }
 do {
 digits++;

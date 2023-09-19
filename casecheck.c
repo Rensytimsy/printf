@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * caseCheck - Handles format specifiers for a custom printf function.
  * @format: A format string containing format specifiers.
@@ -8,35 +7,47 @@
  *
  * Return: The updated value of numchar or -1 for unsupported specifiers.
  */
+
 int caseCheck(const char *format, int numchar, va_list args)
 {
     switch (*format)
-    {
-        case 'd':
-        case 'i':
-            return printf_int(args, numchar);
-        case 'c':
-            _putchar(va_arg(args, int));
-            return (numchar + 1);
-        case 's':
-            return printf_str(args, numchar);
-        case '%':
-            _putchar('%');
-            return (numchar + 1);
-        case 'b':
-            return printf_binary(va_arg(args, unsigned int), numchar);
-        case 'x':
-        case 'X':
-            return _x(va_arg(args, unsigned int), numchar, (*format == 'X') ? 1 : 0);
-        case 'o':
-            return printf_oct(va_arg(args, unsigned int), numchar);
-        case 'u':
-            return printf_unsigned(va_arg(args, unsigned int), numchar);
-        case 'p':
-            return printf_ptr(args, numchar);
-        default:
-            _putchar('U');
-            return -1;
-    }
+	{
+		case 'd':
+		case 'i':
+			numchar = printf_int(args, numchar);
+			break;
+		case 'c':
+			_putchar(va_arg(args, int));
+			numchar++;
+			break;
+		case 's':
+			numchar = printf_str(args, numchar);
+			break;
+		case '%':
+			_putchar('%');
+			numchar++;
+			break;
+		case 'b':
+			numchar = printf_binary(va_arg(args, unsigned int), numchar);
+			break;
+		case 'x':
+		case 'X':
+			numchar = _x(va_arg(args, unsigned int), numchar, (*format == 'X') ? 1 : 0);
+			break;
+		case 'o':
+			numchar = printf_oct(va_arg(args, unsigned int), numchar);
+			break;
+		case 'u':
+			numchar = printf_unsigned(va_arg(args, unsigned int), numchar);
+			break;
+		case 'r':
+			numchar = printf_reverse(args, numchar);
+			break;
+		case 'p':
+			numchar = printf_ptr(args, numchar);
+			break;
+		default:
+			return (-1);
+	}
+	return (numchar);
 }
-
