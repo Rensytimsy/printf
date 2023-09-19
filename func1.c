@@ -15,7 +15,7 @@ if (num < 0)
 {
 num = -num;
 temp = num;
-numchar ++;
+numchar++;
 numchar += _putchar('-');
 }
 do {
