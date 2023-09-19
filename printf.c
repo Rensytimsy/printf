@@ -19,7 +19,7 @@ while (*format)
 if (*format == '%')
 {
 format++;
-caseCheck(format, numchar, args);
+numchar = caseCheck(format, numchar, args);
 }
 else
 {
