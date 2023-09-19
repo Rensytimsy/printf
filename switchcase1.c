@@ -11,19 +11,18 @@
 
 int caseCheck(const char *format, int numchar, va_list args)
 {
-	switch (*format)
-	{
-		case 'd':
-		case 'i':
-			int value = va_arg(args, int);
-			char buffer[12];
-			int len;
-		       
-			int len = snprintf(buffer, sizeof(buffer), "%d", value);
-			write(1, buffer, len);
-			numchar += len;
-			break;
-		default:
-			break;
-	}
+switch (*format)
+{
+case 'd':
+case 'i':
+int value = va_arg(args, int);
+char buffer[12];
+int len;
+int len = snprintf(buffer, sizeof(buffer), "%d", value);
+write(1, buffer, len);
+numchar += len;
+break;
+default:
+break;
+}
 }

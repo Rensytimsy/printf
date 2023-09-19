@@ -37,7 +37,7 @@ int caseCheck(const char *format, int numchar, va_list args)
 			{
 				char percent;
 
-				percent= '%';
+				percent = '%';
 				write(1, &percent, 1);
 				numchar++;
 				break;
