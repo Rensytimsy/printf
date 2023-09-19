@@ -3,7 +3,7 @@
  * _x - Converts and prints an unsigned integer in hexadecimal format.
  * @num: The unsigned integer to be converted.
  * @numchar: The total number of characters printed so far.
- * @uppercase: Indicates whether to use uppercase letters for hexadecimal (1 for yes, 0 for no).
+ * @uppercase: use uppercase letters for hexadecimal (1 for yes, 0 for no).
  *
  * Return: The updated value of numchar.
  */
