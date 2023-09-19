@@ -21,7 +21,7 @@ int printf_oct(unsigned int num, int numchar)
 	}
 	if (i == 0)
 	{
-	        write(1,'0',1);
+	        write(1, "0", 1);
 		numchar++;
 	}
 	else
