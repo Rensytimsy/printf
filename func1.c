@@ -32,7 +32,7 @@ pow10 *= 10;
 }
 digit = num / pow10;
 numchar += _putchar(digit + '0');
-num -= digit * pow10;
+num -= digit *pow10;
 digits--;
 }
 return (numchar);
