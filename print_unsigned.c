@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * printf_unsigned - is our main function.
+ * printf_unsgned - is our main function.
  * @num: is of integer value.
  * @numchar: is the total calculation of arguments
  * Return: (numchar)
