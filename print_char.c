@@ -8,8 +8,9 @@
 
 int printf_char(va_list args, int numchar)
 {
-	int character = va_arg(args, int);
+    int character = va_arg(args, int);
 
-	_putchar(character);
-	return (numchar + 1);
+    write(1, &character, 1);
+    return (numchar + 1);
 }
+

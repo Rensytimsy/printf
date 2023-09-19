@@ -15,7 +15,7 @@ temp /= 10;
 } while (temp != 0);
 if (num == 0)
 {
-_putchar('0');
+write(1, '0', 1);
 numchar++;
 }
 else
@@ -30,7 +30,7 @@ i++;
 }
 for (i = digits - 1; i >= 0; i--)
 {
-_putchar(unsigned_str[i]);
+write(1, unsigned_str[i], 1);
 numchar++;
 }
 }

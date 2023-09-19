@@ -11,7 +11,7 @@ int printf_str(va_list args, int numchar)
 char *string = va_arg(args, char *);
 while (*string != '\0')
 {
-_putchar(*string);
+write(1, string, 1);
 numchar++;
 string++;
 }

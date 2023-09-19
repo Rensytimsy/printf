@@ -21,14 +21,14 @@ int printf_oct(unsigned int num, int numchar)
 	}
 	if (i == 0)
 	{
-		_putchar('0');
+	        write(1,'0',1);
 		numchar++;
 	}
 	else
 	{
 		for (j = i - 1; j >= 0; j--)
 		{
-			_putchar(oct[j]);
+		       write(1,oct[j],1);
 			numchar++;
 		}
 	}

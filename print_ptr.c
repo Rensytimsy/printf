@@ -21,11 +21,11 @@ int printf_ptr(va_list args, int numchar)
 		digits++;
 		temp /= 16;
 	}
-	numchar += _putchar('0');
-	numchar += _putchar('x');
+	numchar += write(1,'0', 1);
+	numchar += write(1,'x',1);
 	if (num == 0)
 	{
-		numchar += _putchar('0');
+	  numchar += write(1, '0', 1);
 	}
 	else
 	{
@@ -39,7 +39,7 @@ int printf_ptr(va_list args, int numchar)
 		}
 		for (i = 0; i < digits; i++)
 		{
-			numchar += _putchar(hex[i]);
+		  numchar += write(1,hex[i],1);
 		}
 	}
 	return (numchar);
