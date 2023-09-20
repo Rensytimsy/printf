@@ -10,22 +10,11 @@
 int printf_str(va_list args, int numchar)
 {
 char *string = va_arg(args, char *);
-const char *nullstr = "(null)";
-if (string == NULL)
-while (*nullstr != '\0')
-{
-_putchar(*nullstr);
-numchar++;
-nullstr++;
-}
-else
-{
 while (*string != '\0')
 {
 _putchar(*string);
 numchar++;
 string++;
-}
 }
 return (numchar);
 }

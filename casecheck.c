@@ -14,40 +14,40 @@ switch (*format)
 {
 case 'd':
 case 'i':
-numchar += printf_int(args, numchar);
+numchar = printf_int(args, numchar);
 break;
 case 'c':
-numchar += _putchar(va_arg(args, int));
+_putchar(va_arg(args, int));
+numchar++;
 break;
 case 's':
-numchar += printf_str(args, numchar);
+numchar = printf_str(args, numchar);
 break;
 case '%':
 _putchar('%');
 numchar++;
 break;
 case 'b':
-numchar += printf_binary(va_arg(args, unsigned int), numchar);
+numchar = printf_binary(va_arg(args, unsigned int), numchar);
 break;
 case 'x':
 case 'X':
-numchar += _x(va_arg(args, unsigned int), numchar, (*format == 'X') ? 1 : 0);
+numchar = _x(va_arg(args, unsigned int), numchar, (*format == 'X') ? 1 : 0);
 break;
 case 'o':
-numchar += printf_oct(va_arg(args, unsigned int), numchar);
+numchar = printf_oct(va_arg(args, unsigned int), numchar);
 break;
 case 'u':
-numchar += printf_unsigned(va_arg(args, unsigned int), numchar);
+numchar = printf_unsigned(va_arg(args, unsigned int), numchar);
 break;
 case 'r':
-numchar += printf_reverse(args, numchar);
+numchar = printf_reverse(args, numchar);
 break;
 case 'p':
-numchar += printf_ptr(args, numchar);
+numchar = printf_ptr(args, numchar);
 break;
 default:
-numchar += print_unknown(format);
-break;
+return (-1);
 }
 return (numchar);
 }

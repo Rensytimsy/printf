@@ -1,0 +1,7 @@
+# files recorded here are ignored
+
+# ignore file with function print_unknown
+print_unknown.c
+
+# ignore main file
+main.c
