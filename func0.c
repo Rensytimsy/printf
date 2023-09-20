@@ -10,6 +10,10 @@
 int printf_str(va_list args, int numchar)
 {
 char *string = va_arg(args, char *);
+if (string == NULL)
+{
+string = "(null)";
+}
 while (*string != '\0')
 {
 /* write(1, string, 1); */

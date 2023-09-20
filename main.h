@@ -19,6 +19,7 @@ int _x(unsigned int num, int numchar, int uppercase);
 int printf_oct(unsigned int num, int numchar);
 int printf_unsigned(unsigned int num, int numchar);
 int printf_reverse(va_list args, int numchar);
+int print_unknown(const char *);
 int printf_ptr(va_list args, int numchar);
 #endif
 
