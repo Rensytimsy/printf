@@ -23,7 +23,8 @@ case 's':
 numchar += printf_str(args, numchar);
 break;
 case '%':
-numchar += _putchar('%');
+_putchar('%');
+numchar++;
 break;
 case 'b':
 numchar += printf_binary(va_arg(args, unsigned int), numchar);

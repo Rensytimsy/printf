@@ -14,7 +14,7 @@ const char *nullstr = "(null)";
 if (string == NULL)
 while (*nullstr != '\0')
 {
-putchar(*nullstr);
+_putchar(*nullstr);
 numchar++;
 nullstr++;
 }

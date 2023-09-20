@@ -41,5 +41,11 @@ printf("Len:[%d]\n", len2);
 /*printf("Unknown:[%r]\n");*/
 _printf("%K\n");
 printf("%K\n");
+_printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+_printf("%%\n");
+printf("%%\n");
+_printf("Should print a single percent sign: %%\n");
+printf("Should print a single percent sign: %%\n");
 return (0);
 }
