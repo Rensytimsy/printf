@@ -10,19 +10,27 @@
 int printf_str(va_list args, int numchar)
 {
 char *string = va_arg(args, char *);
+const char *nullstr = "(null)";
 if (string == NULL)
+while (*nullstr != '\0')
 {
-string = "(null)";
+putchar(*nullstr);
+numchar++;
+nullstr++;
 }
+else
+{
 while (*string != '\0')
 {
-/* write(1, string, 1); */
 _putchar(*string);
 numchar++;
 string++;
 }
+}
 return (numchar);
 }
+
+
 /**
  *printf_char - is our main function that takes two parameters
  *@args:  arguments passed to this function
