@@ -38,7 +38,7 @@ case 'o':
 numchar = printf_oct(va_arg(args, unsigned int), numchar);
 break;
 case 'u':
-numchar = printf_unsigned(va_arg(args, unsigned int), numchar);
+numchar = printf_unsgned(va_arg(args, unsigned int), numchar);
 break;
 case 'r':
 numchar = printf_reverse(args, numchar);
